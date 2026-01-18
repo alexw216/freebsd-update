@@ -1,0 +1,8 @@
+#!/usr/local/bin/bash
+freebsd-version 
+uname -mrs
+sudo freebsd-update fetch
+sudo freebsd-update install
+sudo pkg upgrade -y
+sudo portsnap auto
+sudo pkg audit -F
